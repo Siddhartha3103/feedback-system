@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Feedback System - Auth</title>
+    <meta charset="UTF-8">
+    <title>Feedback System - Auth</title>
 </head>
+
 <body>
-  <h2>Register</h2>
-  <form id="registerForm">
-    <input type="text" id="regUsername" placeholder="Username" required /><br/>
-    <input type="email" id="regEmail" placeholder="Email" required /><br/>
-    <input type="password" id="regPassword" placeholder="Password" required /><br/>
-    <button type="submit">Register</button>
-  </form>
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" id="regUsername" placeholder="Username" required /><br />
+        <input type="email" id="regEmail" placeholder="Email" required /><br />
+        <input type="password" id="regPassword" placeholder="Password" required /><br />
+        <button type="submit">Register</button>
+    </form>
 
-  <h2>Login</h2>
-  <form id="loginForm">
-    <input type="email" id="loginEmail" placeholder="Email" required /><br/>
-    <input type="password" id="loginPassword" placeholder="Password" required /><br/>
-    <button type="submit">Login</button>
-  </form>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required /><br />
+        <input type="password" id="loginPassword" placeholder="Password" required /><br />
+        <button type="submit">Login</button>
+    </form>
 
-  <script src="script.js"></script>
+    <h2>Submit Feedback</h2>
+    <form id="feedbackForm">
+        <textarea id="feedbackMessage" rows="4" cols="40" placeholder="Your feedback..." required></textarea><br />
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
