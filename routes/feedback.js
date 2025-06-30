@@ -1,9 +1,13 @@
+
 const express = require("express");
 const router = express.Router();
 const { submitFeedback, getAllFeedbacks } = require("../controllers/feedbackController");
-const auth = require("../middleware/authMiddleware");
 
-router.post("/", auth, submitFeedback);
-router.get("/", auth, getAllFeedbacks); // 👈 Admin-only
+const requireLogin = require("../middleware/requireLogin");
+const requireAdmin = require("../middleware/requireAdmin");
+
+router.post("/", requireLogin, submitFeedback);
+router.get("/", requireLogin, requireAdmin, getAllFeedbacks);
 
 module.exports = router;
+
