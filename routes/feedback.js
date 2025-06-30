@@ -5,3 +5,5 @@ const auth = require("../middleware/authMiddleware");
 
 router.post("/", auth, submitFeedback);
 router.get("/", auth, getAllFeedbacks); // 👈 Admin-only
+
+module.exports = router;

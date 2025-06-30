@@ -28,6 +28,23 @@
         <button type="submit">Submit Feedback</button>
     </form>
 
+    <hr />
+    <h2>Admin Feedback Panel</h2>
+    <button id="loadFeedbacks">Load All Feedbacks (Admin Only)</button>
+
+    <table border="1" id="feedbackTable" style="margin-top:10px; display:none;">
+        <thead>
+            <tr>
+                <th>User</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Submitted At</th>
+            </tr>
+        </thead>
+        <tbody id="feedbackBody"></tbody>
+    </table>
+
+
 
     <script src="script.js"></script>
 </body>
